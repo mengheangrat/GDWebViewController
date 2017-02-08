@@ -82,6 +82,8 @@ open class GDWebViewController: UIViewController, WKNavigationDelegate, WKUIDele
         }
     }
     
+    /**  change navigation loading color  */
+    open var progressViewTintColor: UIColor = UIColor.blue
     /** Boolean flag which indicates whether JavaScript alerts are allowed. Default is `true`. */
     open var allowJavaScriptAlerts = true
     
@@ -293,6 +295,8 @@ open class GDWebViewController: UIViewController, WKNavigationDelegate, WKUIDele
     fileprivate func progressChanged(_ newValue: NSNumber) {
         if progressView == nil {
             progressView = UIProgressView()
+            // mark: parker edited
+            progressView.tintColor = progressViewTintColor
             progressView.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview(progressView)
             
