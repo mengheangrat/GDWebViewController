@@ -18,6 +18,9 @@ For Swift 2 support go [here](https://github.com/coffellas-cto/GDWebViewControll
 Just grab two files `GDWebViewController.swift` and `GDWebViewNavigationToolbar.swift` into your project.<br />
 You can download `GDWebBrowserClient` project as well to see how it can be used.
 
+## Pod install
+pod 'GDWebViewController', :git => 'https://github.com/mengheangrat/SWActivityIndicatorView.git'
+
 ## GDWebViewController Interface
 ####Properties
 ```swift
